@@ -19,6 +19,9 @@ public class UserTest {
         ivanov.printTotalAmountOfSpentMoney();
         popov.printTotalAmountOfSpentMoney();
         shulha.printTotalAmountOfSpentMoney();
+
+        ivanov.addDiscount(50);
+        shulha.addDiscount(30);
     }
 
 }
