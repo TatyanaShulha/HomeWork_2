@@ -8,14 +8,12 @@ import java.util.concurrent.Callable;
 public class Main {
     public static void main(String[] args) {
 
-
         UserTest userTest = new UserTest();
         userTest.UserTest();
 
         User user1 = new User();
 
         user1.setAge(16);
-
 
         user1.setPassword("34k555k");
 
@@ -27,13 +25,11 @@ public class Main {
         User user3 = new User("Popova", "qwerty123");
 
 
-        Calculator result = new Calculator();
-        System.out.println("Sum = " + result.plus(4,9));
-        System.out.println("Minus = " + result.minus(5,4));
-        System.out.println("Division = " + result.division(2,7));
-        System.out.println("Multiplication = " + result.multiplication(3,9));
 
-
+        System.out.println("Sum = " + Calculator.plus(3,6)); // правильно, то что требуется в задаче (вызов через Класс)
+        System.out.println("Minus = " + Calculator.minus(5,4));  // правильно, то что требуется в задаче (вызов через Класс)
+        System.out.println("Division = " + Calculator.division(2,7));
+        System.out.println("Multiplication = " + Calculator.multiplication(3,9));
 
 
 
